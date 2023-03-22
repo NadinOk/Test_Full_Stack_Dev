@@ -19,7 +19,6 @@ export default function CustomizedTables(props) {
     const fullData = useSelector(
         (state) => state.dataTransactionSlice.transactionFullData
     );
-
     useEffect(() => {
         if (!fullData?.data) {
             dispatch(transactionActions.getTransactionData());

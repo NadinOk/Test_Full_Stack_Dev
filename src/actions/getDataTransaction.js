@@ -9,8 +9,8 @@ export const transactionActions = {
                 .then((res) => {
                     dispatch(setTransactionFullData(res.data))
                 })
-                .catch((error) => {
-                    console.log('profileApi getTransactionData', error)
+                .catch(() => {
+                    alert(`Opps something went wrong... The transaction ID must start with 0x and have 66 characters after it sender and recipient addresses must start with 0x and have 40 characters after`)
                 })
         } catch (error) {
             console.log('getTransactionData', error)
