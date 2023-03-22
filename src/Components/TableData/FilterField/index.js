@@ -75,6 +75,7 @@ const SelectLabels = () => {
                     className={Styles.submitBtn}
                     type="submit"
                     onClick={handleClick}
+                    disabled={filters === ''}
                 >
                     <img src={searchIcon} alt="search"/>
                 </button>
