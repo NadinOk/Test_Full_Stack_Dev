@@ -84,7 +84,7 @@ export default function CustomizedTables(props) {
                                         scope="row"
                                         align="left"
                                     >
-                                        {rowItem?.block_number}
+                                        {parseInt(rowItem?.block_number.split('0x')[1], 16)}
                                     </TableCell>
                                     <TableCell align="left">
                                         <a
@@ -117,7 +117,6 @@ export default function CustomizedTables(props) {
                                         {
                                             convDate(parseInt(rowItem?.timestamp.split('0x')[1], 16))
                                         }
-                                        {/*{parseInt(rowItem?.timeStamp.split('0x')[1], 16 )}*/}
                                     </TableCell>
                                     <TableCell className={Styles.table_th} align="left">
                                         {parseInt(rowItem?.value.split('0x')[1], 16)}

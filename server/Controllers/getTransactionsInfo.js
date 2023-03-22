@@ -4,9 +4,14 @@ import getBlockServices from "../services/getBlockServices.js";
 
 
 export const getTransactionsInfo = async (req, res) => {
-    if (verifyHash(req.query) === true) {
+    const queryParams = req.query
+
+    if (queryParams.block_number) {
+        queryParams.block_number = `0x${Number(queryParams.block_number).toString(16)}`
+    }
+    if (verifyHash(queryParams) === true) {
         const lastBlock = await getBlockServices();
-        await getTransactionsInfoServices(req.query)
+        await getTransactionsInfoServices(queryParams)
             .then((response) => {
                 if (response.docs.length !== 0) {
                     const data = response.docs.map(item => {

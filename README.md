@@ -4,7 +4,7 @@
 
 ## Start server
 
-In the project directory 'AppCo', you can run:
+In the project directory 'Test_Full_Stack_Dev', you can run:
 
 ### `cd server`
 
@@ -24,7 +24,7 @@ In the project directory 'AppCo', you can run:
 
 ### result:
 
-In the project directory 'AppCo', you can run:
+In the project directory 'Test_Full_Stack_Dev', you can run:
 
 ### `cd client`
 
