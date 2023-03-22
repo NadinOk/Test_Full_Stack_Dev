@@ -10,7 +10,7 @@
 
 ### result:
 
-In the project directory 'Test_Full_Stack_Dev', you can run:
+In the project directory 'Test_Full_Stack_Dev_front', you can run:
 
 ### `cd client`
 
