@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 201px);
+  flex-grow: 1;
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--footer-color);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .main_content {
+    height: calc(100% - 101px);
+  }
+}

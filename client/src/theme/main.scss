@@ -1,0 +1,27 @@
+html,
+body {
+  font-family: Noto Sans KR, sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+#root {
+  // Scrollbar
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: inherit;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--black500-color);
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--black600-color);
+  }
+}

@@ -1,0 +1,51 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 35%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 17px 11px 16px 128px;
+  background: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+
+  & .field:first-child {
+    width: 60%;
+  }
+}
+
+.field {
+  width: 40%;
+  height: 40px !important;
+
+  & > div {
+    height: 100%;
+
+    & > input {
+      height: 100%;
+      border: none;
+      border-right: 1px solid #c5c5c5;
+      outline: none;
+      padding: 0 10px;
+    }
+
+    & > fieldset {
+      display: none;
+    }
+  }
+}
+
+.submitBtn {
+  width: 48px;
+  height: 48px;
+  background: #3a80ba;
+  border-radius: 8px;
+}
