@@ -1,4 +1,5 @@
 {
+  "homepage": "https://NadinOk.github.io/Test_Full_Stack_Dev_front",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "node_modules/.bin/react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "node_modules/.bin/react-scripts build",
     "test": "node_modules/.bin/react-scripts test",
     "eject": "node_modules/.bin/react-scripts eject"
