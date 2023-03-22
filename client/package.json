@@ -1,5 +1,5 @@
 {
-  "homepage": "https://NadinOk.github.io/Test_Full_Stack_Dev_front",
+  "homepage": "https://nadinok.github.io/Test_Full_Stack_Dev_front",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.54.0"
   }
 }
